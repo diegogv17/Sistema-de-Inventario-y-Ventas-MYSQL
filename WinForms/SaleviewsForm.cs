@@ -201,5 +201,10 @@ namespace InventoryApp.WinForms
             dtHasta.Enabled = chkFecha.Checked;
             await CargarVentasAsync();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

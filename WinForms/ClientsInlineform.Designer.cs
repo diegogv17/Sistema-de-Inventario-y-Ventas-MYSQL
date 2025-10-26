@@ -32,6 +32,7 @@
             btnEliminar = new Button();
             btnEditar = new Button();
             btnConfirmar = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridClients).BeginInit();
             SuspendLayout();
             // 
@@ -74,11 +75,22 @@
             btnConfirmar.UseVisualStyleBackColor = true;
             btnConfirmar.Click += btnConfirmar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Variable Small", 18F, FontStyle.Bold);
+            label1.Location = new Point(226, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(357, 32);
+            label1.TabIndex = 4;
+            label1.Text = "CRUD Completo para Clientes";
+            // 
             // ClientsInlineform
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 511);
+            Controls.Add(label1);
             Controls.Add(btnConfirmar);
             Controls.Add(btnEditar);
             Controls.Add(btnEliminar);
@@ -88,6 +100,7 @@
             Load += ClientsInlineform_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridClients).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -96,5 +109,6 @@
         private Button btnEliminar;
         private Button btnEditar;
         private Button btnConfirmar;
+        private Label label1;
     }
 }
